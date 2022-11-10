@@ -51,12 +51,12 @@ exports.post_profile = (req, res) => {
 
 exports.edit_profile = (req, res) => {
     User.edit_profile(req.body, () => {
-        res.send('회원 정보 수정 성공!');
+        res.send('Editing done!');
     });
 };
 
 exports.delete_profile = (req, res) => {
     User.delete_profile(req.body.id, () => {
-        res.send('회원 탈퇴 성공!');
+        res.send('Your account is deleted!');
     });
 };
